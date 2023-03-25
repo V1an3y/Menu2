@@ -126,13 +126,7 @@
     "descripcion":"Vaso de agua de jamaica", 
     "precio":30, 
     "imagen": "img/25.jpg", 
-   }, 
-   { 
-    "nombre": "", 
-    "descripcion":"Lata de refresco de sprite", 
-    "precio":20, 
-    "imagen": "img/26.jpg", 
-   }, 
+   },  
    { 
     "nombre": "Cafe", 
     "descripcion":"Taza de cafe", 
