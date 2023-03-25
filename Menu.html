@@ -9,7 +9,7 @@
 <link href="https://fonts.cdnfonts.com/css/hamidha" rel="stylesheet">
                 
  
-<title>Pagina 1</title>
+<title>Menu.html</title>
 </head>
 <body>
 <div style="margin:24px;">
@@ -34,7 +34,7 @@
     </nav>
 </div>
 
-<titulo>MENU DEL RESTAURANTE</titulo>
+<titulo><center><font size="12" color="#128396" face="times new roman">MENU DEL RESTAURANTE</font></center></titulo>
 
 <div id="menu"></div>
 
@@ -53,39 +53,49 @@ tabla.innerHTML=`
         <th>Precio</th>
         <th>Seleccion</th>
 </tr>
-</th>
+</thead>
 </tbody>
 </tbody>        
-       
-   `;
-       document.createElementById('menu').appendChild(tabla);
+  `;
+       document.getElementById('menu').appendChild(tabla);
 
        //Agregar lo datos de cada categoria y productos de la tabla
 
 Object.keys(data).forEach(categoria => {
 	data[categoria].forEach(producto => {
-		conts fila = document.createElemen('tr');
-		fila.innerHTML=` 
+		conts fila = document.createElement('tr');
+		fila.innerHTML=`
 		<td>${categoria}</td>
         <td><img src="${producto.imagen}" alt="${producto.name}"></td>
         <td>${producto.nombre}</td>
         <td>${producto.decripcion}</td>
         <td>${producto.precio}</td>
         <td><input type="checkbox" class="producto" data-precio="${producto.precio}"></td>
-
-	 `;
+	  ` ;
         tabla.querySelector('tbody').appendChild(fila);
          });
 	  });
-     //Esta es la parte del codigo qe realiza la suma
-     const productos = document.querySelectorAll('.producto');
-     productos.forEach(prodcto => {
-     	producto
-     })
-		        })
-           })
-      });
-    </script>
+     
+     //Esta es la parte del codigo que realiza la suma 
 
-</body>
-</html>
+     const productos = document.querySelectorAll('.producto');
+     productos.forEach(producto => {
+      producto.addEventListener('change', () => {
+       var suma =0;
+
+         productos.forEach(producto => {
+
+if (producto.checked) {
+
+suma +parseFloat(producto.dataset.precio);
+
+}
+
+document.getElementById('resultado').innerHTML=`<h1>TOTAL: $${suma.toFixed(2)} </h1>`
+
+      });
+   });
+})
+.catch(error => console.error(error));
+
+</script>

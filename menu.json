@@ -123,4 +123,59 @@
  "Potres"
  
 ]
-}
+ }
+ ], 
+ "Extras":[ 
+  { 
+   "nombre": "Ensalada Cesar", 
+    "descripcion":"Lechuga, pollo, queso parmesano, crutones y aderezo cesar", 
+    "precio":50, 
+    "imagen": "img/21.jpg", 
+  } 
+ ] 
+ { 
+ "Bebidas":[ 
+   { 
+    "nombre": "Coca", 
+    "descripcion":"Lata de refresco de cola", 
+    "precio":20, 
+    "imagen": "img/22.jpg", 
+   }, 
+   { 
+    "nombre": "Manzanita", 
+    "descripcion":"Lata de refresco de manzanita", 
+    "precio":20, 
+    "imagen": "img/23.jpg", 
+   }, 
+   { 
+    "nombre": "Agua de limon", 
+    "descripcion":"Vaso de limonada", 
+    "precio":30, 
+    "imagen": "img/24.jpg", 
+   }, 
+   { 
+    "nombre": "Agua de jamaica", 
+    "descripcion":"Vaso de agua de jamaica", 
+    "precio":30, 
+    "imagen": "img/25.jpg", 
+   }, 
+   { 
+    "nombre": "Sprite", 
+    "descripcion":"Lata de refresco de sprite", 
+    "precio":20, 
+    "imagen": "img/26.jpg", 
+   }, 
+   { 
+    "nombre": "Cafe", 
+    "descripcion":"Taza de cafe", 
+    "precio":50, 
+    "imagen": "img/27.jpg", 
+   }, 
+   { 
+    "nombre": "Malteada", 
+    "descripcion":"Vaso de malteada de su preferencia", 
+    "precio":30, 
+    "imagen": "img/28.jpg", 
+   } 
+   ] 
+ }
